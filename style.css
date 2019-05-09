@@ -1,0 +1,805 @@
+html, body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    width:100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-bottom: 40px;
+}
+.txtparraf{ 
+    font-size: 25px;
+    line-height: 1.64;
+    padding-top: 20px;
+}
+
+.parrafo{
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 88%; 
+    margin: 0 auto;
+}
+
+.reader {
+    max-width: 1100px; 
+    margin: 0 auto 70px;
+    width: 100%;
+}
+
+header{margin-top:20px;}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__link {
+    color: #000;
+    display: block;
+    padding: 20px;
+    text-decoration: none; 
+
+    padding: 2px 20px;
+    font-size: 30px;
+    margin: 20px 0 20px 40px;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 14px;
+}
+.uslink.active{
+    background-color: #FC0D85;
+    color:#fff;
+}
+.worklink.active{
+    background-color: #FC0D85;
+    color:#fff;
+}
+.letslink.active{
+    background-color: #FC0D85;
+    color:#fff;
+}
+.hero {
+    color: #0D27FF;
+    font-size: 96px;
+    line-height:107px;
+    font-weight: 500;
+    margin-bottom:100px;
+}
+.contactpage .hero { 
+    line-height: 105px; 
+}
+.hero.selectedprojects {
+  display:flex;
+  margin-bottom: 55px;
+}
+.hero .otherprojectslist{
+    color: #000;
+    font-size: 22px;
+    line-height:30px;
+    font-weight: 400;
+    margin-bottom:10px;
+    margin-top:60px;
+    
+}
+
+.hero.atributs.font-black {
+    margin-bottom: 69px;
+    line-height: 100px;
+    margin-top: -8px;
+}
+.otherprojectslist * {
+    width:100%;
+}
+.otherprojectslist img{
+   display:none;
+    position: fixed;
+    width: 300px;
+    right:6%;
+    margin-top:-43px;
+}
+.otherprojectslist li a {
+    text-decoration: none;
+    color:#000;
+}
+.otherprojectslist li a:hover {
+    color:#FC0D85;
+}
+.otherprojectslist ul li:hover img{
+    display: block;
+}
+.activeproject{
+    color:#ccc;
+}
+.hero p {
+    margin-top: 52px;
+}
+.font-light {
+    font-weight: 400;
+}
+.font-black {
+    font-weight: 900;
+}
+
+.magenta {
+    color: #FC0D85;
+}
+
+.work {}
+
+.halfblock{
+    width:50%;
+    float:left;
+}
+.fondoazul{
+    background-color: #0D27FF;
+    color: #fff;
+    float: left;
+    margin-top: -4px;
+    width:100%;
+}
+.fondoazul a{
+    color: #fff; 
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+
+.fondoazul .littletext a, 
+.fondoazul a.mailtolink, .talksmall a.mailtolink{
+    border-bottom: none;text-decoration: none;
+}
+.fondoazul a.mailtolink:hover, .talksmall a.mailtolink:hover{
+    color:#FC0D85;
+}
+
+.fondoazul .socialnetworks a:hover{
+    color:#FC0D85;
+    border-bottom: 2px solid #FC0D85;
+}
+.tituloblanco{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.alignright{
+    text-align: right;
+}
+.alignleft{
+    text-align: left;
+}
+.aligncenter{
+    text-align:center;
+}
+.firsttitlepage{
+    padding-top: 37px;
+}
+.socialnetworks .halfblock{
+    padding: 0px 46px;
+}
+
+.socialnetworks .halfblock.alignright { 
+    padding-right: 91px;
+}
+.footer .littletext{
+    margin: 53px 0;
+    float: left;
+    width: 100%;
+}
+.borderwhite{
+    border-top: 2px solid white;
+    padding: 30px 0;
+    float:left;
+    width:100%;
+}
+.borderwhite.lastblockblue {
+    border-bottom: 2px solid white;
+    margin-bottom:88px;
+}
+.s{
+    font-size:16px;
+}
+.logosimgs {
+    padding-top:40px;
+    float: left;
+    width: 100%;
+}
+
+.logos-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singlelogo {
+    width:25%;
+    text-align: center; 
+    margin: 0 auto 40px auto;
+}
+
+.singlelogo img {
+    opacity: .75;
+    /* transition: opacity .25s ease-in-out; */
+    width: auto;
+    margin:auto;
+}
+
+.singlelogo img:hover {
+    opacity: 1;
+} 
+
+.logosimgs .bluetxt{
+    margin-bottom:40px;
+}
+
+.bluetxt{
+    color:#0D27FF;
+}
+.socialnetworks{
+    padding: 52px 0 77px;
+}
+.textogrande{
+    font-size: 40px;
+    width: 100%;
+    /* float: left; */
+}
+.secondblockborder{
+    padding: 50px 0 60px;
+}
+.contactblock .secondblockborder{
+    padding: 55px 0 0px;
+    line-height: 51px;
+}
+
+.lastblockblue{
+    padding-bottom: 50px;
+}
+.h3{
+    font-size: 40px;
+    width: 100%;
+}
+
+.listaconcept{
+    font-size: 20px;
+    width: 100%;
+    line-height: 26px;
+    margin-top: 10px;  
+}
+
+.concepts {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+.concepts__item {
+    width: 100%;
+}
+
+.concepts__sep {
+    min-width: 10%;
+    margin-top: 40px;
+}
+.firstcolumn{
+    padding-right:22px;
+}
+.column30{
+    /* width:25%;
+    float:left; */
+}
+.column5{
+    /* width:12.5%;
+    float:left;
+    text-align:center; */
+}
+.cruzblock {
+    text-align: center;
+}
+.cruzblock img{
+    width:50px;
+    margin:auto;
+    opacity: 0.9;
+}
+.blockinside{
+    margin: auto;
+    width: 65%;
+}
+
+.eachproject{
+    border-top: 2px solid #000;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.eachproject a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.eachproject a:hover{ 
+    color: #555;
+}
+
+.eachproject_image {
+    position: relative;
+}
+
+.eachproject a:hover .eachproject_image:before {
+    content: '';
+    opacity: 0.4;
+    background-color: #0D27FF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.contactinfoblock{
+    border-top:solid 2px #000;
+    padding: 15px 0 25px;
+}
+.contactinfoblock div{
+    width:25%;
+    float:left;
+}
+.eachproject .imgeachproject{
+   /* background-color:#0D27FF;*/
+}
+.textproject{
+    padding-bottom: 14px;
+}
+.floatright{
+    float:right;
+}
+.eachproject.lastproject {
+    margin-bottom:70px;
+}
+.maintextproject{
+    color: #0D27FF;
+font-size: 40px;
+padding: 42px 20% 51px 15%;
+}
+
+.detail {
+    display: flex;
+    margin: 53px auto;
+    min-width: 960px;
+    font-size: 20px;
+    line-height: 25px;
+    
+}
+
+.detail__title {
+    width: 25%;
+    margin-top: -3px;
+    font-size: 22px;    
+    text-align: right;
+    margin-right: 55px;
+
+}
+.firstimage{
+    padding-right:8px; 
+}
+.secondimage{
+    padding-left:8px; 
+}
+.firstimage,
+.secondimage{ 
+    padding-bottom:12px;
+}
+.list {
+    list-style-type: disc;
+    letter-spacing: 1px;
+    max-width: 60%;
+  
+}
+.otherimages{
+    margin-bottom:12px;
+}
+.lastimageproject{
+    margin-bottom:98px;
+}
+
+.ir-arriba {
+	display:none;
+	position: fixed;
+	bottom:46px;
+    right:30px;
+    width: 38px;
+	cursor:pointer; 
+}
+
+.ir-arriba img{ 
+    width: 38px;
+}
+
+.ir-arriba:hover { 
+	cursor:pointer; 
+}
+.ir-arriba:hover img { 
+	cursor:pointer; 
+}
+.ir-arriba img:hover { 
+	cursor:pointer; 
+}
+
+.ir-next,
+.ir-back{
+/*	position: fixed;
+	top:50%; */
+    width: 30px;
+	cursor:pointer; 
+}
+
+.ir-next a,
+.ir-back a{
+    text-decoration: none;
+    color:black;
+}
+.ir-next{  
+    right:30px; 
+}
+.ir-back{  
+    left:30px; 
+}
+.titleotherprojects{
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+}
+.talksmall{
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.contactpage .talksmall {
+    font-size: 96px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+.arrowgris{
+    width: 57px;
+    margin: 25px auto;
+}
+
+.menu-open .menu-navigation{
+    display: block;
+}
+
+
+.opened{
+    display:none;
+}
+
+
+.maintxtpolicy{
+    text-align: justify;
+}
+
+
+/*
+EJEMPLO PROF
+*/
+
+
+.menu {
+    position: relative;
+    z-index: 2;
+}
+
+
+.menu-open .navigation {
+    top: 0;
+}
+
+.opened {
+    display: none;
+}
+
+.menu-open .opened { display: block; }
+.menu-open .closed { display: none; }
+
+.video {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width:40em) {
+
+    .navigation__link { 
+        margin: 20px 0 20px 0px;
+    }
+
+    .navigation {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        transition: top 350ms ease-in-out;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+    .menu img{    margin-top: 18px;}
+
+}
+@media (min-width: 40em) {
+    .navigation {
+        display: block;
+    }
+    .navigation li {
+        float:left;
+    }
+    .navigation li:hover, .closed:hover , .opened:hover  {cursor:pointer;}
+
+    .menu {
+        display: none;
+    }
+}
+/*
+END ejemplo prof
+*/
+
+
+@media screen and (min-width: 820px) {
+    .mobile-boton {
+        display: none;
+    }
+
+    .navigationmenu {
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hiddenmobile{
+        display:none;
+    }
+    .hero.atributs.font-black {
+        margin-bottom: 58px;
+        line-height: 55px;
+        margin-top: 37px;
+        margin-left: 79px;
+    }
+    .column30 .h3{
+        font-size: 30px;
+    }
+    .singlelogo {
+        width: 100%;    margin: 0 auto 38px auto;
+    }
+    .tituloblanco { 
+        font-size: 36px; 
+    }
+    .txtparraf {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        padding-top: 0px;
+    }
+    .cruzblock { 
+        display: none;
+    }
+    .concepts {
+        display: block;
+    }
+    .blockinside {
+        margin: 30px auto;
+        width: 100%;
+    }
+    .logosimgs .bluetxt { 
+        font-size: 25px;
+        letter-spacing: 0.5px;
+    }
+    .secondblockborder {
+        padding: 20px 0 30px;
+    }
+    .textogrande {
+        font-size: 20px;
+    }
+    .firsttitlepage {
+        padding-top: 25px;
+    }
+    .ir-next {
+        margin-right: 15px;
+        margin-bottom: 20px;
+        float: right;
+    }
+    .ir-back{
+
+        margin-left: 12px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    .lastimageproject {
+        margin-bottom: 28px;
+    }
+    .titleotherprojects {
+        font-size: 36px;
+    }
+    .hero p {
+        margin-top: 44px;
+        margin-bottom: 15px;
+        line-height: 41px;
+    }
+    .maintextproject { 
+        font-size: 22px;
+       /* padding: 42px 3% 51px 0%;*/
+        padding: 5px 3% 30px 0%;
+    }
+
+    .hero.selectedprojects {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .hero .otherprojectslist { 
+        display:none;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 21px;
+    }
+    .contactpage .talksmall {
+        font-size: 36px;
+    }
+    .talksmall a.mailtolink {
+        font-size: 30px;
+        color:#FC0D85;
+    }
+    .footer .firsttitlepage {
+        padding-top: 17px;
+    }
+    .detail {
+        display: block;
+        margin: 15px auto;
+        min-width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .detail__title {
+        width: 100%;  
+        text-align: left;     margin-top: 0;
+        font-size: 19px;
+        padding: 0;
+        text-align: left;
+        margin-right: 0px;
+    }
+
+    .list {  
+        max-width: 100%;
+        margin-left: 20px;
+    }
+    .halfblock {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+.textproject span{display:block;}
+    .hero {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom:40px;
+    }
+    .textproject .floatright {
+        float: left;  
+        margin: 13px 0 25px;
+        display: table;
+        width: 100%;
+    }
+
+    .eachproject {
+        font-size: 16px;
+        width: 100%;
+        float: left;
+    }
+    .footer .tituloblanco {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+
+    .footer .textogrande {
+        font-size: 20px; 
+        margin-bottom: 5px;
+    }
+    .footer .font-black{
+        display: block;
+    }
+    .desktoptitulofooter{
+        display:none;
+    }
+
+    .contactblock .secondblockborder {
+        padding: 28px 0 0px;
+        line-height: 31px;
+    }
+    .socialnetworks {
+        padding: 12px 0 50px;
+    }
+    .socialnetworks .halfblock {
+        padding: 10px 0px!important;
+        width: 100%;
+        text-align: center;
+    }
+    .footer .littletext .halfblock {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center!important;
+    }
+    .logo{
+        width:160px;
+    }
+    .footer .littletext {
+        margin: 38px 0 31px;
+    }
+}
+@media screen and (min-width: 960px) { 
+    .hiddendesktop{
+        display:none;
+    }
+    .mobiletitulofooter{
+        display:none;
+    }
+    .weare {
+        width: 60%;
+    }
+    
+    .atributs {
+        width: 40%;
+    }
+    
+    .txtparraf{ 
+       padding: 0 90px 0 0;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .ir-back{
+        display: none;
+    }
+
+    .ir-next{
+        display: none;
+    }
+
+
+}
